@@ -5,11 +5,6 @@ keyboard1 = telebot.types.ReplyKeyboardMarkup(True)
 keyboard1.row('Вкл_Скайп', 'ВЫКЛ')
 keyboard1.row('Привет', 'Перезагрузка')
 
-
-
-
-
-
 users_start = [40922918]  # последнее - id группы если бот что-то должен делать в группе
 # Органичение выполнение команды start
 @bot.message_handler(func=lambda message: message.chat.id not in users_start, commands=['start'])
